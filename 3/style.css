@@ -1,0 +1,116 @@
+html {
+    background: black url("texture_bg.png");
+}
+
+body {
+    max-width: 1130px;
+    text-align: center;
+    margin: 20px auto 0;
+    color: white;
+}
+
+a {
+    color: white;
+}
+
+.top div {
+    display: inline-block;
+    width: 33%;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.top  .name {
+    font-size: 75px;
+    line-height: 55px;
+    font-family: Helvetica, sans-serif;
+    letter-spacing: -5px;
+}
+
+.top .motto {
+    letter-spacing: 20px;
+    font-size: 13px;
+}
+
+.icon {
+    transform: translateX(30px);
+    height: 50px;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.icon > span,
+.time {
+    padding-left: 30px;
+}
+
+.number {
+    background-image: url("phone.png");
+}
+
+.address {
+    background-image: url("point.png");
+}
+
+.schedule {
+    background-image: url("time.png");
+}
+
+.map {
+    display: block;
+    text-align: right;
+    font-size: 15px;
+
+}
+
+.time {
+    display: block;
+}
+
+.menu {
+    margin-top: 10px;
+    height: 80px;
+    background: linear-gradient(0deg, #9b0000, #c81919);
+    vertical-align: middle;
+    display: flex;
+    text-align: center;
+}
+
+.menu a {
+    height: 100%;
+    padding: 30px 37px 0;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+.menu > a:nth-child(7) {
+    padding-top: 20px;
+}
+
+.menu a div img {
+    position: relative;
+    transform: translateY(10%);
+    z-index: 1;
+}
+
+.menu > a:nth-child(7) div.img::after {
+    margin: auto;
+    display: block;
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 70px solid #9b0000;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    transform: rotateX(80deg) translateY(-300%);
+}
+
+
+.line {
+    display: inline-block;
+    border-left: 1px solid #a00808;
+    border-right: 1px solid #d93131;
+    height: 70%;
+    transform: translateY(15%);
+}
